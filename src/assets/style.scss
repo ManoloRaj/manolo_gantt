@@ -1,0 +1,103 @@
+body{
+    font-size: 12px;
+}
+.table{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 400px auto;
+    font-size: 15px;
+    .left{
+        .left_bar_title{
+            padding: 5px;
+            height: 20px;
+            border: rgb(245, 245, 245) solid 1px;
+            display: grid;
+            grid-template-columns: auto 25% 25% 5%;
+            .columns{
+                
+            }
+            .ajouter{
+                position: relative;
+                top :-10px
+            }
+            .ajouter:hover{
+                box-shadow: 0 0 4px rgb(156, 156, 156) ;
+            }
+        }
+    }
+    .right{
+        text-align: center;
+        width: auto;
+        overflow-x: scroll;
+    }
+}
+.row{
+    height: 30px;
+    border: rgb(245, 245, 245) solid 1px;
+
+    .element_ensemble{
+        display: grid;
+        grid-template-columns: auto 30px;
+
+        .draggable_element{
+            position: relative;
+            left: 0px;
+            border: none;
+            border-radius: 40px;
+            background-color: rgb(105, 105, 105);
+            height: 30px;
+            color: white;
+            font-size: 10px;
+            cursor: grab;
+            transition: 0.1s;
+            display: grid;
+            grid-template-columns: 10% auto;
+
+            .deplacement{
+                opacity: 0.7;
+                background-color: rgb(197, 197, 197);
+                border-radius: 30px;
+                width: 16px;
+                height: 16px;
+                margin: 5px;
+                padding : 2px;
+                box-shadow: 0 0 10px grey;
+                transition : 0.5s;
+            }
+        }
+        .draggable_element:hover{
+            box-shadow: 0 0 5px rgb(255, 255, 255);
+        }
+
+        .width_cursor{
+            transition: 0.1s;
+            position: relative;
+            left: 0;
+            margin: 3px;
+            height: 25px;
+            width: 25px;
+            border-radius: 20px;
+            background-color: rgb(216, 216, 216);
+
+            .style{
+                border: rgb(255, 255, 255) 1px solid;
+                border-radius: 30px;
+                width: 13px;
+                height: 13px;
+                margin: 5px;
+                
+                box-shadow: 0 0 10px grey;
+                transition : 0.5s;
+            }
+            .style:hover{
+                box-shadow: 0 0 5px rgb(241, 241, 241);
+            }
+        }
+    }
+    
+}
+
+.dialog_content{
+    font-size: 14px;
+    
+}
